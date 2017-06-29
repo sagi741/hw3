@@ -1,0 +1,11 @@
+<h3>Movies:</h3>
+<ul>
+  <li *ngFor="let movie of fakeMovies | async">
+    <div>Name: {{movie.name}}</div>
+    <div>Year: {{movie.year}}</div>
+    <div>runtime: {{movie.runtime}}</div>
+    <div>price: {{movie.price}}</div>
+    <div>order: {{movie.order}}</div>
+    <div>catagory: {{movie.catagory}}</div>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+Price: <input type="number" [ngModel]="price"> <br>
+Order: <input type="number" [ngModel]="order"> <br>
+<button (click)="search()">Search</button>
+
+Result:
+<h3>Movies:</h3>
+<ul>
+  <li *ngFor="let movie of results | async">
+    <div>Name: {{movie.name}}</div>
+    <div>Year: {{movie.year}}</div>
+  </li>
+</ul>
+
